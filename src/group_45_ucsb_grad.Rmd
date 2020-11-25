@@ -1,0 +1,23 @@
+---
+title: "Group 45 UCSB domestic grad enrollment"
+author: "Jacob Weverka and Craig Kopulsky"
+date: "11/25/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(here)
+
+```
+
+
+
+Reading in data about demographic enrollment in UCSB graduate programs by year
+```{r}
+ucsb_grad = read_csv(here("data/ucsb_grad_data.csv"))
+  
+```
+
