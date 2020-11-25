@@ -20,4 +20,10 @@ Reading in data about demographic enrollment in UCSB graduate programs by year
 ucsb_grad = read_csv(here("data/ucsb_grad_data.csv"))
   
 ```
+adding geom_col plot for domestic enrollment by year
+
+```{r}
+ggplot(data = ucsb_grad, aes(x = year_abbr, y = domestic_enrollment)) +
+  geom_col()
+```
 
