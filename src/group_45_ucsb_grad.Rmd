@@ -26,7 +26,9 @@ adding geom_col plot for domestic enrollment by year
 ggplot(data = ucsb_grad, aes(x = year_abbr, y = domestic_enrollment, fill =  ethnicity)) +
   geom_col(position = "fill") +
   ylab("Ethnic Proportions of Graduate Class") +
-  xlab("Enrollment Year")
+  xlab("Enrollment Year") + 
+  labs(title = "Ethnic Proportions of Graduate Class by Enrollment Year \nfor UCSB Domestic Graduates") +
+  theme_minimal()
   
 ```
 
